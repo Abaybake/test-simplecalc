@@ -1,0 +1,5 @@
+/home/tester/Desktop/ExampleBash/build/CMakeFiles/rebuild_cache.dir
+/home/tester/Desktop/ExampleBash/build/CMakeFiles/edit_cache.dir
+/home/tester/Desktop/ExampleBash/build/src/CMakeFiles/rebuild_cache.dir
+/home/tester/Desktop/ExampleBash/build/src/CMakeFiles/edit_cache.dir
+/home/tester/Desktop/ExampleBash/build/src/CMakeFiles/SimpleCalc.dir
