@@ -3,8 +3,3 @@
 /home/tester/Desktop/ExampleBash/build/src/CMakeFiles/rebuild_cache.dir
 /home/tester/Desktop/ExampleBash/build/src/CMakeFiles/edit_cache.dir
 /home/tester/Desktop/ExampleBash/build/src/CMakeFiles/simplecalc.dir
-/home/tester/Desktop/ExampleBash/build/include/CMakeFiles/rebuild_cache.dir
-/home/tester/Desktop/ExampleBash/build/include/CMakeFiles/edit_cache.dir
-/home/tester/Desktop/ExampleBash/build/include/my_lib/CMakeFiles/edit_cache.dir
-/home/tester/Desktop/ExampleBash/build/include/my_lib/CMakeFiles/rebuild_cache.dir
-/home/tester/Desktop/ExampleBash/build/include/my_lib/CMakeFiles/check_arguments.dir

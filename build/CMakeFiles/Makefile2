@@ -54,57 +54,18 @@ CMAKE_BINARY_DIR = /home/tester/Desktop/ExampleBash/build
 
 # The main recursive "all" target.
 all: src/all
-all: include/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/preinstall
-preinstall: include/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: src/clean
-clean: include/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory include
-
-# Recursive "all" directory target.
-include/all: include/my_lib/all
-
-.PHONY : include/all
-
-# Recursive "preinstall" directory target.
-include/preinstall: include/my_lib/preinstall
-
-.PHONY : include/preinstall
-
-# Recursive "clean" directory target.
-include/clean: include/my_lib/clean
-
-.PHONY : include/clean
-
-#=============================================================================
-# Directory level rules for directory include/my_lib
-
-# Recursive "all" directory target.
-include/my_lib/all: include/my_lib/CMakeFiles/check_arguments.dir/all
-
-.PHONY : include/my_lib/all
-
-# Recursive "preinstall" directory target.
-include/my_lib/preinstall:
-
-.PHONY : include/my_lib/preinstall
-
-# Recursive "clean" directory target.
-include/my_lib/clean: include/my_lib/CMakeFiles/check_arguments.dir/clean
-
-.PHONY : include/my_lib/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -128,10 +89,10 @@ src/clean: src/CMakeFiles/simplecalc.dir/clean
 # Target rules for target src/CMakeFiles/simplecalc.dir
 
 # All Build rule for target.
-src/CMakeFiles/simplecalc.dir/all: include/my_lib/CMakeFiles/check_arguments.dir/all
+src/CMakeFiles/simplecalc.dir/all:
 	$(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/depend
 	$(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tester/Desktop/ExampleBash/build/CMakeFiles --progress-num=3,4 "Built target simplecalc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tester/Desktop/ExampleBash/build/CMakeFiles --progress-num=1,2,3,4 "Built target simplecalc"
 .PHONY : src/CMakeFiles/simplecalc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -150,33 +111,6 @@ simplecalc: src/CMakeFiles/simplecalc.dir/rule
 src/CMakeFiles/simplecalc.dir/clean:
 	$(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/clean
 .PHONY : src/CMakeFiles/simplecalc.dir/clean
-
-#=============================================================================
-# Target rules for target include/my_lib/CMakeFiles/check_arguments.dir
-
-# All Build rule for target.
-include/my_lib/CMakeFiles/check_arguments.dir/all:
-	$(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/depend
-	$(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tester/Desktop/ExampleBash/build/CMakeFiles --progress-num=1,2 "Built target check_arguments"
-.PHONY : include/my_lib/CMakeFiles/check_arguments.dir/all
-
-# Build rule for subdir invocation for target.
-include/my_lib/CMakeFiles/check_arguments.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 include/my_lib/CMakeFiles/check_arguments.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles 0
-.PHONY : include/my_lib/CMakeFiles/check_arguments.dir/rule
-
-# Convenience name for target.
-check_arguments: include/my_lib/CMakeFiles/check_arguments.dir/rule
-
-.PHONY : check_arguments
-
-# clean rule for target.
-include/my_lib/CMakeFiles/check_arguments.dir/clean:
-	$(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/clean
-.PHONY : include/my_lib/CMakeFiles/check_arguments.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

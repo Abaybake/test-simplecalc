@@ -1,4 +1,6 @@
 #Add Executable
-add_executable(simplecalc simplecalc.c)
+add_executable(simplecalc simplecalc.c check_arguments.c addition.c)
 
-target_link_libraries(simplecalc PUBLIC check_arguments)
+
+
+

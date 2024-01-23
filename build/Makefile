@@ -123,19 +123,6 @@ simplecalc/fast:
 	$(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/build
 .PHONY : simplecalc/fast
 
-#=============================================================================
-# Target rules for targets named check_arguments
-
-# Build rule for target.
-check_arguments: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_arguments
-.PHONY : check_arguments
-
-# fast build rule for target.
-check_arguments/fast:
-	$(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/build
-.PHONY : check_arguments/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -145,7 +132,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... simplecalc"
-	@echo "... check_arguments"
 .PHONY : help
 
 

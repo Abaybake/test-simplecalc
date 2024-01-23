@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/simplecalc.dir/addition.c.o"
+  "CMakeFiles/simplecalc.dir/check_arguments.c.o"
   "CMakeFiles/simplecalc.dir/simplecalc.c.o"
   "simplecalc"
   "simplecalc.pdb"

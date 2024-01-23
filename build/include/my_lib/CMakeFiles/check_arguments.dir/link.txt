@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcheck_arguments.a  CMakeFiles/check_arguments.dir/check_arguments.c.o
-/usr/bin/ranlib libcheck_arguments.a

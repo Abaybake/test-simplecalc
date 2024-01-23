@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
-../include/my_lib/check_arguments.h
+../include/addition.h
+
+../include/check_arguments.h
+
+/home/tester/Desktop/ExampleBash/src/addition.c
+stdio.h
+-
+stdlib.h
+-
+addition.h
+/home/tester/Desktop/ExampleBash/src/addition.h
+
+/home/tester/Desktop/ExampleBash/src/check_arguments.c
+stdlib.h
+-
+stdio.h
+-
+stdint.h
+-
+string.h
+-
+check_arguments.h
+/home/tester/Desktop/ExampleBash/src/check_arguments.h
+addition.h
+/home/tester/Desktop/ExampleBash/src/addition.h
 
 /home/tester/Desktop/ExampleBash/src/simplecalc.c
 stdlib.h

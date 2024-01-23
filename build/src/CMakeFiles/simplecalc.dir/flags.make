@@ -6,5 +6,5 @@ C_FLAGS =   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/tester/Desktop/ExampleBash/include/my_lib/. 
+C_INCLUDES = -I/home/tester/Desktop/ExampleBash/include 
 

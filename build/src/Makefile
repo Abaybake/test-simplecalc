@@ -125,6 +125,60 @@ simplecalc/fast:
 	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/build
 .PHONY : simplecalc/fast
 
+addition.o: addition.c.o
+
+.PHONY : addition.o
+
+# target to build an object file
+addition.c.o:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/addition.c.o
+.PHONY : addition.c.o
+
+addition.i: addition.c.i
+
+.PHONY : addition.i
+
+# target to preprocess a source file
+addition.c.i:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/addition.c.i
+.PHONY : addition.c.i
+
+addition.s: addition.c.s
+
+.PHONY : addition.s
+
+# target to generate assembly for a file
+addition.c.s:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/addition.c.s
+.PHONY : addition.c.s
+
+check_arguments.o: check_arguments.c.o
+
+.PHONY : check_arguments.o
+
+# target to build an object file
+check_arguments.c.o:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/check_arguments.c.o
+.PHONY : check_arguments.c.o
+
+check_arguments.i: check_arguments.c.i
+
+.PHONY : check_arguments.i
+
+# target to preprocess a source file
+check_arguments.c.i:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/check_arguments.c.i
+.PHONY : check_arguments.c.i
+
+check_arguments.s: check_arguments.c.s
+
+.PHONY : check_arguments.s
+
+# target to generate assembly for a file
+check_arguments.c.s:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/check_arguments.c.s
+.PHONY : check_arguments.c.s
+
 simplecalc.o: simplecalc.c.o
 
 .PHONY : simplecalc.o
@@ -161,6 +215,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... simplecalc"
+	@echo "... addition.o"
+	@echo "... addition.i"
+	@echo "... addition.s"
+	@echo "... check_arguments.o"
+	@echo "... check_arguments.i"
+	@echo "... check_arguments.s"
 	@echo "... simplecalc.o"
 	@echo "... simplecalc.i"
 	@echo "... simplecalc.s"
