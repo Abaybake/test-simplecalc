@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SimpleCalc.dir/main.c.o"
+  "CMakeFiles/SimpleCalc.dir/simplecalc.c.o"
   "SimpleCalc"
   "SimpleCalc.pdb"
 )

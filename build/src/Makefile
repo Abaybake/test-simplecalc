@@ -125,32 +125,32 @@ SimpleCalc/fast:
 	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/SimpleCalc.dir/build.make src/CMakeFiles/SimpleCalc.dir/build
 .PHONY : SimpleCalc/fast
 
-main.o: main.c.o
+simplecalc.o: simplecalc.c.o
 
-.PHONY : main.o
+.PHONY : simplecalc.o
 
 # target to build an object file
-main.c.o:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/SimpleCalc.dir/build.make src/CMakeFiles/SimpleCalc.dir/main.c.o
-.PHONY : main.c.o
+simplecalc.c.o:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/SimpleCalc.dir/build.make src/CMakeFiles/SimpleCalc.dir/simplecalc.c.o
+.PHONY : simplecalc.c.o
 
-main.i: main.c.i
+simplecalc.i: simplecalc.c.i
 
-.PHONY : main.i
+.PHONY : simplecalc.i
 
 # target to preprocess a source file
-main.c.i:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/SimpleCalc.dir/build.make src/CMakeFiles/SimpleCalc.dir/main.c.i
-.PHONY : main.c.i
+simplecalc.c.i:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/SimpleCalc.dir/build.make src/CMakeFiles/SimpleCalc.dir/simplecalc.c.i
+.PHONY : simplecalc.c.i
 
-main.s: main.c.s
+simplecalc.s: simplecalc.c.s
 
-.PHONY : main.s
+.PHONY : simplecalc.s
 
 # target to generate assembly for a file
-main.c.s:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/SimpleCalc.dir/build.make src/CMakeFiles/SimpleCalc.dir/main.c.s
-.PHONY : main.c.s
+simplecalc.c.s:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/SimpleCalc.dir/build.make src/CMakeFiles/SimpleCalc.dir/simplecalc.c.s
+.PHONY : simplecalc.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SimpleCalc"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... simplecalc.o"
+	@echo "... simplecalc.i"
+	@echo "... simplecalc.s"
 .PHONY : help
 
 

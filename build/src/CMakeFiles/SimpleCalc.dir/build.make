@@ -57,27 +57,27 @@ include src/CMakeFiles/SimpleCalc.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/SimpleCalc.dir/flags.make
 
-src/CMakeFiles/SimpleCalc.dir/main.c.o: src/CMakeFiles/SimpleCalc.dir/flags.make
-src/CMakeFiles/SimpleCalc.dir/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tester/Desktop/ExampleBash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/SimpleCalc.dir/main.c.o"
-	cd /home/tester/Desktop/ExampleBash/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleCalc.dir/main.c.o   -c /home/tester/Desktop/ExampleBash/src/main.c
+src/CMakeFiles/SimpleCalc.dir/simplecalc.c.o: src/CMakeFiles/SimpleCalc.dir/flags.make
+src/CMakeFiles/SimpleCalc.dir/simplecalc.c.o: ../src/simplecalc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tester/Desktop/ExampleBash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/CMakeFiles/SimpleCalc.dir/simplecalc.c.o"
+	cd /home/tester/Desktop/ExampleBash/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SimpleCalc.dir/simplecalc.c.o   -c /home/tester/Desktop/ExampleBash/src/simplecalc.c
 
-src/CMakeFiles/SimpleCalc.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleCalc.dir/main.c.i"
-	cd /home/tester/Desktop/ExampleBash/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tester/Desktop/ExampleBash/src/main.c > CMakeFiles/SimpleCalc.dir/main.c.i
+src/CMakeFiles/SimpleCalc.dir/simplecalc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SimpleCalc.dir/simplecalc.c.i"
+	cd /home/tester/Desktop/ExampleBash/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tester/Desktop/ExampleBash/src/simplecalc.c > CMakeFiles/SimpleCalc.dir/simplecalc.c.i
 
-src/CMakeFiles/SimpleCalc.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleCalc.dir/main.c.s"
-	cd /home/tester/Desktop/ExampleBash/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tester/Desktop/ExampleBash/src/main.c -o CMakeFiles/SimpleCalc.dir/main.c.s
+src/CMakeFiles/SimpleCalc.dir/simplecalc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SimpleCalc.dir/simplecalc.c.s"
+	cd /home/tester/Desktop/ExampleBash/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tester/Desktop/ExampleBash/src/simplecalc.c -o CMakeFiles/SimpleCalc.dir/simplecalc.c.s
 
 # Object files for target SimpleCalc
 SimpleCalc_OBJECTS = \
-"CMakeFiles/SimpleCalc.dir/main.c.o"
+"CMakeFiles/SimpleCalc.dir/simplecalc.c.o"
 
 # External object files for target SimpleCalc
 SimpleCalc_EXTERNAL_OBJECTS =
 
-src/SimpleCalc: src/CMakeFiles/SimpleCalc.dir/main.c.o
+src/SimpleCalc: src/CMakeFiles/SimpleCalc.dir/simplecalc.c.o
 src/SimpleCalc: src/CMakeFiles/SimpleCalc.dir/build.make
 src/SimpleCalc: src/CMakeFiles/SimpleCalc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tester/Desktop/ExampleBash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable SimpleCalc"

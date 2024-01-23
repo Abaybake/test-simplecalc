@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/tester/Desktop/ExampleBash/src/main.c
-stdio.h
--
+/home/tester/Desktop/ExampleBash/src/simplecalc.c
 stdlib.h
 -
-math.h
+stdio.h
+-
+stdint.h
+-
+errno.h
+-
+limits.h
 -
 
