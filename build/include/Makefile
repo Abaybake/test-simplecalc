@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tester/Desktop/ExampleBash/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles /home/tester/Desktop/ExampleBash/build/src/CMakeFiles/progress.marks
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	cd /home/tester/Desktop/ExampleBash/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles /home/tester/Desktop/ExampleBash/build/include/CMakeFiles/progress.marks
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,60 +97,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
 	cd /home/tester/Desktop/ExampleBash/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-src/CMakeFiles/simplecalc.dir/rule:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/simplecalc.dir/rule
-.PHONY : src/CMakeFiles/simplecalc.dir/rule
-
-# Convenience name for target.
-simplecalc: src/CMakeFiles/simplecalc.dir/rule
-
-.PHONY : simplecalc
-
-# fast build rule for target.
-simplecalc/fast:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/build
-.PHONY : simplecalc/fast
-
-simplecalc.o: simplecalc.c.o
-
-.PHONY : simplecalc.o
-
-# target to build an object file
-simplecalc.c.o:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/simplecalc.c.o
-.PHONY : simplecalc.c.o
-
-simplecalc.i: simplecalc.c.i
-
-.PHONY : simplecalc.i
-
-# target to preprocess a source file
-simplecalc.c.i:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/simplecalc.c.i
-.PHONY : simplecalc.c.i
-
-simplecalc.s: simplecalc.c.s
-
-.PHONY : simplecalc.s
-
-# target to generate assembly for a file
-simplecalc.c.s:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/simplecalc.c.s
-.PHONY : simplecalc.c.s
 
 # Help Target
 help:
@@ -160,10 +118,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... simplecalc"
-	@echo "... simplecalc.o"
-	@echo "... simplecalc.i"
-	@echo "... simplecalc.s"
 .PHONY : help
 
 

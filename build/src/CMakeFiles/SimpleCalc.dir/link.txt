@@ -1,1 +1,0 @@
-/usr/bin/cc    CMakeFiles/SimpleCalc.dir/simplecalc.c.o  -o SimpleCalc 

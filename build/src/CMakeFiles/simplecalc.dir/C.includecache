@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../include/my_lib/check_arguments.h
+
 /home/tester/Desktop/ExampleBash/src/simplecalc.c
 stdlib.h
 -
@@ -17,4 +19,6 @@ errno.h
 -
 limits.h
 -
+check_arguments.h
+/home/tester/Desktop/ExampleBash/src/check_arguments.h
 

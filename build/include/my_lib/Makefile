@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/tester/Desktop/ExampleBash/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -78,16 +67,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/tester/Desktop/ExampleBash/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles /home/tester/Desktop/ExampleBash/build/src/CMakeFiles/progress.marks
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	cd /home/tester/Desktop/ExampleBash/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles /home/tester/Desktop/ExampleBash/build/include/my_lib/CMakeFiles/progress.marks
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/my_lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tester/Desktop/ExampleBash/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/my_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/my_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/my_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -111,46 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/simplecalc.dir/rule:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/simplecalc.dir/rule
-.PHONY : src/CMakeFiles/simplecalc.dir/rule
+include/my_lib/CMakeFiles/check_arguments.dir/rule:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f CMakeFiles/Makefile2 include/my_lib/CMakeFiles/check_arguments.dir/rule
+.PHONY : include/my_lib/CMakeFiles/check_arguments.dir/rule
 
 # Convenience name for target.
-simplecalc: src/CMakeFiles/simplecalc.dir/rule
+check_arguments: include/my_lib/CMakeFiles/check_arguments.dir/rule
 
-.PHONY : simplecalc
+.PHONY : check_arguments
 
 # fast build rule for target.
-simplecalc/fast:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/build
-.PHONY : simplecalc/fast
+check_arguments/fast:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/build
+.PHONY : check_arguments/fast
 
-simplecalc.o: simplecalc.c.o
+check_arguments.o: check_arguments.c.o
 
-.PHONY : simplecalc.o
+.PHONY : check_arguments.o
 
 # target to build an object file
-simplecalc.c.o:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/simplecalc.c.o
-.PHONY : simplecalc.c.o
+check_arguments.c.o:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/check_arguments.c.o
+.PHONY : check_arguments.c.o
 
-simplecalc.i: simplecalc.c.i
+check_arguments.i: check_arguments.c.i
 
-.PHONY : simplecalc.i
+.PHONY : check_arguments.i
 
 # target to preprocess a source file
-simplecalc.c.i:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/simplecalc.c.i
-.PHONY : simplecalc.c.i
+check_arguments.c.i:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/check_arguments.c.i
+.PHONY : check_arguments.c.i
 
-simplecalc.s: simplecalc.c.s
+check_arguments.s: check_arguments.c.s
 
-.PHONY : simplecalc.s
+.PHONY : check_arguments.s
 
 # target to generate assembly for a file
-simplecalc.c.s:
-	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f src/CMakeFiles/simplecalc.dir/build.make src/CMakeFiles/simplecalc.dir/simplecalc.c.s
-.PHONY : simplecalc.c.s
+check_arguments.c.s:
+	cd /home/tester/Desktop/ExampleBash/build && $(MAKE) -f include/my_lib/CMakeFiles/check_arguments.dir/build.make include/my_lib/CMakeFiles/check_arguments.dir/check_arguments.c.s
+.PHONY : check_arguments.c.s
 
 # Help Target
 help:
@@ -158,12 +158,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... simplecalc"
-	@echo "... simplecalc.o"
-	@echo "... simplecalc.i"
-	@echo "... simplecalc.s"
+	@echo "... rebuild_cache"
+	@echo "... check_arguments"
+	@echo "... check_arguments.o"
+	@echo "... check_arguments.i"
+	@echo "... check_arguments.s"
 .PHONY : help
 
 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tester/Desktop/ExampleBash/include/my_lib/check_arguments.c
+stdlib.h
+-
+stdio.h
+-
+stdint.h
+-
+check_arguments.h
+/home/tester/Desktop/ExampleBash/include/my_lib/check_arguments.h
+
+/home/tester/Desktop/ExampleBash/include/my_lib/check_arguments.h
+

@@ -1,0 +1,1 @@
+/usr/bin/gcc    CMakeFiles/simplecalc.dir/simplecalc.c.o  -o simplecalc  ../include/my_lib/libcheck_arguments.a 
